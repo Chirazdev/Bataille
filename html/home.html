@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>La bataille de Faerun  </title>
+  <link rel="stylesheet" href="../Css/styles.css">
+  <link href="https://fonts.cdnfonts.com/css/gears-of-peace" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/game-of-squids" rel="stylesheet">
+
+</head>
+<body>
+  <div class="modal-content2" id="mim2" style="display: none;">
+    <h1 id="winnerMessage"></h1>
+    <span class="close" id="closeButtonWin">&times;</span>
+    <div class="slide-container">
+        <div class="video-container">
+            <video id="videoPlayer" controls>
+                <source src="../images/video.mp4" type="video/mp4">
+            </video>
+        </div>
+        <button id="restart">Restart</button>
+    </div>
+  </div>
+  <div class="top-bar">
+    <button id="autoplayButton" class="autoplay-icon" style="display: none;">
+      <img id="autoplayIcon" src="../images/auto.png" alt="Autoplay On" width="30" height="30">
+    </button>
+    <button id="musicButton" class="music-icon">
+      <img id="musicIcon" src="../images/mute.png" alt="Music Off" width="30" height="30">
+    </button>
+    <span id="tourNumber">Tour: 1</span>
+  </div>
+  
+  <audio id="backgroundMusic" loop>
+    <source src="../images/euphoria.mp3" type="audio/mpeg">
+  </audio>
+
+      
+  <div class="container">
+    <h1>Welcome to <br> La bataille de Faerun</h1>
+    <button id="startButton">Start</button>
+
+  </div>
+
+  <div id="myModal" class="modal" style="display: none;">
+    <div class="modal-content"id="mim" style="display: none;">
+      <h1>Meet your Staff</h1>
+      <span class="close" id="closeButton">&times;</span>  
+        <div class="slide-container">
+            <div class="custom-slider fade">
+                <img class="slide" src="../images/elf.png">
+                <div class="slide-text" id="slidetext">Elf</div>
+            </div>
+            <div class="custom-slider fade">
+                <img class="slide" src="../images/chef elf.png">
+                <div class="slide-text"id="slidetext">Chef Elf</div>
+            </div>
+            <div class="custom-slider fade">
+                <img class="slide" src="../images/nain.png">
+                <div class="slide-text"id="slidetext">Nain</div>                             
+            </div>
+            <div class="custom-slider fade">
+                <img class="slide" src="../images/chef-nain.png">
+                <div class="slide-text"id="slidetext">Chef Nain</div>
+            </div>
+            <a class="prev" id="prevButton">&#10094;</a>
+            <a class="next" id="nextButton">&#10095;</a>
+            <button id="playButton" >Train</button>
+
+        </div>
+    </div>
+</div>
+<div id="guerrierModal" class="modal" style="display: none;">
+  <div class="modal-content3" id="mim3" >
+    <span class="close" id="closeButton2">&times;</span>
+    <h2>Guerrier Details</h2>
+    <p id="guerrierDetails"></p>
+  </div>
+</div>
+<div id="fight" class="modal" style="display: none;">
+  <div class="modal-content3" id="mim4" >
+    <span class="close" id="closeButton2">&times;</span>
+    <h2>fight Details</h2>
+    <p id="fightDetails"></p>
+  </div>
+</div>
+<div id="piste" class="piste"  style="display: none;">
+
+  <table>
+    <th id="carreau-0"><ul id="l0"></ul></th>
+    <th id="carreau-1"><ul id="l1"></ul></th>
+    <th id="carreau-2"><ul id="l2"></ul></th>
+    <th id="carreau-3"><ul id="l3"></ul></th>
+    <th id="carreau-4"><ul id="l4"></ul></th>
+  </table>
+  <button id="novelle" class="centered-button">Lance Partie</button>
+  <button id="novelletour" class="centered-button" style="display: none;">Nouvelle Tour</button>
+
+
+</div>
+<div id="waitingList" style="display: none;">
+  <div id="bleuWaitingList" class="waiting-list"></div>
+  <div id="rougeWaitingList" class="waiting-list"></div>
+</div>
+<script src="../JS/Guerrier.js"></script>
+<script src="../JS/Menu.js"></script>
+<script src="../JS/Elfe.js"></script>
+<script src="../JS/ChefElf.js"></script>
+<script src="../JS/Nain.js"></script>
+<script src="../JS/ChefNain.js"></script>
+<script src="../JS/Chateau.js"></script>
+<script src="../JS/Plateau.js"></script>
+<script src="../JS/Carreau.js"></script>
+<script src="../JS/Partie.js"></script>
+<script src="../JS/Main.js"></script>
+</body>
+</html>
